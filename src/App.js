@@ -2,7 +2,6 @@ import {
   IconButton,
   Typography,
   Grid,
-  Paper,
   Avatar,
   Card,
   CardHeader,
@@ -10,13 +9,12 @@ import {
   CardContent,
 } from "@mui/material";
 import React from "react";
-import PersonIcon from "@mui/icons-material/Person";
 import GoogleIcon from "@mui/icons-material/Google";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
-// import logo from './logo.svg';
+
 import "./Main.css";
 import "swiper/css";
 
@@ -198,7 +196,7 @@ function App() {
                           image="/images/napulsav2.png"
                           alt="Napulsa"
                         />
-                        <CardContent>
+                        <CardContent className="porto__web__detail">
                           <Typography variant="body2" color="text.secondary">
                             Website penjualan produk pulsa dan PPOB, dilengkapi
                             notifikasi real-time menggunakan pusher. alamat URL:{" "}
@@ -222,7 +220,7 @@ function App() {
                           image="/images/neodrivev3.png"
                           alt="Neodrive v3 (CodeIgniter 4)"
                         />
-                        <CardContent>
+                        <CardContent className="porto__web__detail">
                           <Typography variant="body2" color="text.secondary">
                             Website sharing file dengan API google drive,
                             meningkatkan keamanan serta bypass limitasi google
@@ -249,7 +247,7 @@ function App() {
                           image="/images/napulsav1.png"
                           alt="Napulsa v1 (CodeIgniter 3)"
                         />
-                        <CardContent>
+                        <CardContent className="porto__web__detail">
                           <Typography variant="body2" color="text.secondary">
                             Versi pendahulu dari napulsa, Website penjualan
                             produk pulsa dan PPOB. Alamat URL :{" "}
@@ -273,7 +271,7 @@ function App() {
                           image="/images/neodrivev2.png"
                           alt="Neodrive"
                         />
-                        <CardContent>
+                        <CardContent className="porto__web__detail">
                           <Typography variant="body2" color="text.secondary">
                             Versi pendahulu dari neodrive. Website sharing file
                             dengan API google drive. Alamat URL :
@@ -297,7 +295,7 @@ function App() {
                           image="/images/penjualan.png"
                           alt="Aplikasi penjualan (ReactJs Firebase)"
                         />
-                        <CardContent>
+                        <CardContent className="porto__web__detail">
                           <Typography variant="body2" color="text.secondary">
                             Versi pendahulu dari neodrive. Website sharing file
                             dengan API google drive. Alamat URL :
