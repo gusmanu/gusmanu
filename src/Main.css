@@ -20,6 +20,11 @@
   gap: 30px;
 }
 
+.my__logo {
+  width: 120px;
+  height: 30px;
+}
+
 .header__logo {
   object-fit: contain;
   height: 40px;
@@ -44,7 +49,7 @@
 }
 
 .card__grid {
-  height: 88vh;
+  height: 122vh;
 }
 
 .about__me__short {
@@ -102,6 +107,9 @@
 
 @media only screen and (max-width: 600px) {
   .body {
+    padding: 0px 20px;
+  }
+  .header {
     padding: 0px 20px;
   }
   .card__grid {

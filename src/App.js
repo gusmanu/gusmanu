@@ -16,7 +16,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
-
 // import logo from './logo.svg';
 import "./Main.css";
 import "swiper/css";
@@ -32,12 +31,10 @@ function App() {
   return (
     <div class="App">
       <div className="header">
-        <div className="my__logo">{/* <img src=""></img> */}</div>
-        <div className="header__menu">
-          <Typography>About Me</Typography>
-          <Typography>My Skills</Typography>
-          <Typography>My Projects</Typography>
+        <div>
+          <img className="my__logo" src="/images/logo.png" alt="logo"></img>
         </div>
+        <div className="header__menu"></div>
       </div>
       <div className="body">
         <Grid container spacing={2}>
@@ -45,7 +42,10 @@ function App() {
             <Card className="card__grid">
               <CardContent>
                 <div className="avatar__wrapper">
-                  <Avatar className="avatar__image">GR</Avatar>
+                  <Avatar
+                    className="avatar__image"
+                    src="/images/my.jpg"
+                  ></Avatar>
                   <Typography variant="h5" component="h1">
                     Gusmanu Rohman
                   </Typography>
@@ -66,7 +66,7 @@ function App() {
                   </IconButton>
                   <IconButton
                     onClick={() => {
-                      toLocation("https://wa.me/+6288217466987");
+                      toLocation("https://wa.me/+6282232460729");
                     }}
                   >
                     <PhoneIcon />
@@ -78,7 +78,11 @@ function App() {
                   >
                     <InstagramIcon />
                   </IconButton>
-                  <IconButton>
+                  <IconButton
+                    onClick={() => {
+                      toLocation("https://m.facebook.com/gusmanurohman28");
+                    }}
+                  >
                     <FacebookIcon />
                   </IconButton>
                   <IconButton
@@ -185,7 +189,7 @@ function App() {
                         <CardHeader
                           titleTypographyProps={{ variant: "subtitle2" }}
                           className="website__title"
-                          title="Napulsa.com"
+                          title="Napulsa v2 (Laravel)"
                         ></CardHeader>
                         <CardMedia
                           className="porto__web__image"
@@ -196,10 +200,11 @@ function App() {
                         />
                         <CardContent>
                           <Typography variant="body2" color="text.secondary">
-                            This impressive paella is a perfect party dish and a
-                            fun meal to cook together with your guests. Add 1
-                            cup of frozen peas along with the mussels, if you
-                            like.
+                            Website penjualan produk pulsa dan PPOB, dilengkapi
+                            notifikasi real-time menggunakan pusher. alamat URL:{" "}
+                            <a href="https://napulsa.com">
+                              https://napulsa.com
+                            </a>
                           </Typography>
                         </CardContent>
                       </Card>
@@ -209,21 +214,23 @@ function App() {
                         <CardHeader
                           titleTypographyProps={{ variant: "subtitle2" }}
                           className="website__title"
-                          title="Neodrive.my.id"
+                          title="Neodrive v3 (CodeIgniter 4)"
                         ></CardHeader>
                         <CardMedia
                           className="porto__web__image"
                           component="img"
-                          fit
                           image="/images/neodrivev3.png"
-                          alt="Napulsa"
+                          alt="Neodrive v3 (CodeIgniter 4)"
                         />
                         <CardContent>
                           <Typography variant="body2" color="text.secondary">
-                            This impressive paella is a perfect party dish and a
-                            fun meal to cook together with your guests. Add 1
-                            cup of frozen peas along with the mussels, if you
-                            like.
+                            Website sharing file dengan API google drive,
+                            meningkatkan keamanan serta bypass limitasi google
+                            drive, dilengkapi player HTML5 untuk memutar video.
+                            Alamat URL :
+                            <a href="https://neodrive.my.id">
+                              https://neodrive.my.id
+                            </a>
                           </Typography>
                         </CardContent>
                       </Card>
@@ -233,41 +240,70 @@ function App() {
                         <CardHeader
                           className="website__title"
                           titleTypographyProps={{ variant: "subtitle2" }}
-                          title="Napulsa v1"
+                          title="Napulsa v1 (CodeIgniter 3)"
                         ></CardHeader>
                         <CardMedia
                           className="porto__web__image"
                           component="img"
                           fit
                           image="/images/napulsav1.png"
-                          alt="Napulsa"
+                          alt="Napulsa v1 (CodeIgniter 3)"
                         />
                         <CardContent>
                           <Typography variant="body2" color="text.secondary">
-                            This impressive paella is a perfect party dish and a
-                            fun meal to cook together with your guests. Add 1
-                            cup of frozen peas along with the mussels, if you
-                            like.
+                            Versi pendahulu dari napulsa, Website penjualan
+                            produk pulsa dan PPOB. Alamat URL :{" "}
+                            <a href="https://v1-napulsa.herokuapp.com/">
+                              https://v1-napulsa.herokuapp.com/
+                            </a>
                           </Typography>
                         </CardContent>
                       </Card>
                     </SwiperSlide>
                     <SwiperSlide className="porto__web__card">
                       <Card>
-                        <CardHeader title="Napulsa.com"></CardHeader>
+                        <CardHeader
+                          titleTypographyProps={{ variant: "subtitle2" }}
+                          className="website__title"
+                          title="Neodrive v2 (PHP Native)"
+                        ></CardHeader>
                         <CardMedia
                           component="img"
                           className="porto__web__image"
-                          fit
-                          image="/images/napulsav2.png"
-                          alt="Napulsa"
+                          image="/images/neodrivev2.png"
+                          alt="Neodrive"
                         />
                         <CardContent>
                           <Typography variant="body2" color="text.secondary">
-                            This impressive paella is a perfect party dish and a
-                            fun meal to cook together with your guests. Add 1
-                            cup of frozen peas along with the mussels, if you
-                            like.
+                            Versi pendahulu dari neodrive. Website sharing file
+                            dengan API google drive. Alamat URL :
+                            <a href="https://v2-neodrive.herokuapp.com/">
+                              https://v2-neodrive.herokuapp.com/
+                            </a>
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </SwiperSlide>
+                    <SwiperSlide className="porto__web__card">
+                      <Card>
+                        <CardHeader
+                          titleTypographyProps={{ variant: "subtitle2" }}
+                          className="website__title"
+                          title="Aplikasi penjualan (ReactJs Firebase)"
+                        ></CardHeader>
+                        <CardMedia
+                          component="img"
+                          className="porto__web__image"
+                          image="/images/penjualan.png"
+                          alt="Aplikasi penjualan (ReactJs Firebase)"
+                        />
+                        <CardContent>
+                          <Typography variant="body2" color="text.secondary">
+                            Versi pendahulu dari neodrive. Website sharing file
+                            dengan API google drive. Alamat URL :
+                            <a href="https://inspiring-rosalind-5f6347.netlify.app/">
+                              https://inspiring-rosalind-5f6347.netlify.app/
+                            </a>
                           </Typography>
                         </CardContent>
                       </Card>
