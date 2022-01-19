@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-bottom: 2px solid #f3f1f1;
+  padding: 0px 50px;
+  margin-bottom: 10px;
+  min-height: 70px;
+}
+
+.body {
+  padding: 0px 50px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 30px;
+}
+
+.header__logo {
+  object-fit: contain;
+  height: 40px;
+}
+
+.header__icon {
+  padding: 20px;
+}
+
+.avatar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar__image {
+  width: 110px !important;
+  height: 110px !important;
+}
+
+.card__grid {
+  height: 88vh;
+}
+
+.about__me__short {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.line__through {
+  text-decoration: line-through;
+}
+
+.my__contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1__custom {
+  font-weight: bolder !important;
+}
+
+.education__title {
+  font-weight: 500 !important;
+}
+
+.education__year {
+  margin-bottom: 5px;
+}
+
+.bio__content {
+  display: block;
+  margin-bottom: 15px !important;
+}
+
+.my__ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+
+.website__title {
+  padding: 5px 0px !important;
+}
+
+.swiper-slide.porto__web__card {
+  width: 80%;
+}
+
+.porto__web__image {
+  object-fit: cover;
+  height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    padding: 0px 20px;
+  }
+  .card__grid {
+    height: auto;
+  }
+}
