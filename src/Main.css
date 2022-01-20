@@ -120,4 +120,8 @@
   .card__grid {
     height: auto;
   }
+
+  .my__ul {
+    padding-left: 16px;
+  }
 }
